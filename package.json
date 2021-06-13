@@ -1,4 +1,5 @@
 {
+  "homepage": "http://itsalitahir700.github.io/artistsevents",
   "name": "react-template",
   "version": "0.1.0",
   "private": true,
@@ -29,10 +30,13 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.16.0",
     "eslint-plugin-react-hooks": "^2.1.0",
+    "gh-pages": "^3.2.0",
     "prettier": "1.18.2",
     "pretty-quick": "^1.11.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deplay": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
